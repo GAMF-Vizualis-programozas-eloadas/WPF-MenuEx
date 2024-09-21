@@ -1,0 +1,22 @@
+﻿<Window x:Class="Menu_Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu_Example"
+        mc:Ignorable="d"
+        Title="Menu example" Height="242" Width="395">
+	<DockPanel>
+		<Menu  x:Name="mnMainMenu" Height="40" DockPanel.Dock="Top" >
+			<Menu.ItemsPanel>
+				<ItemsPanelTemplate>
+					<DockPanel Background="#FF40E247" VerticalAlignment="Center" />
+				</ItemsPanelTemplate>
+			</Menu.ItemsPanel>
+			<MenuItem Header="File" x:Name="miFile" />
+			<MenuItem Header="Draw" x:Name="miDraw" />
+			<MenuItem Header="Help" x:Name="miHelp" HorizontalAlignment="Right"/>
+		</Menu>
+		<Canvas />
+	</DockPanel>
+</Window>
